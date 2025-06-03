@@ -5,6 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { products } from '../data/products';
 import { Product } from '../types';
 import { useCart } from '../context/CartContext';
+import Brand from '../Assest/Brand.jpg'
 
 export default function Shop() {
   const [selectedProduct, setSelectedProduct] = useState<Product | null>(null);
@@ -42,7 +43,7 @@ export default function Shop() {
         <div 
           className="absolute inset-0 bg-cover bg-center bg-fixed"
           style={{
-            backgroundImage: `url('https://images.unsplash.com/photo-1589363360147-4f2d51541551?auto=format&fit=crop&q=80&w=1920')`
+            backgroundImage: `url(${Brand})`
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 to-secondary/70" />

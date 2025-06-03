@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { ShoppingCart, Menu } from 'lucide-react';
 import { useCart } from '../context/CartContext';
 import { motion, AnimatePresence } from 'framer-motion';
+import Logo from '../Assest/Logo.jpg';
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -25,7 +26,7 @@ export default function Navbar() {
           >
             <Link to="/" className="flex items-center gap-2">
               <img 
-                src="https://capkings.ng/wp-content/uploads/2024/04/IMG_2101-600x800.jpg" 
+               src={Logo} 
                 alt="African Elegance Logo" 
                 className="h-10 w-10 rounded-full object-cover"
               />
@@ -86,7 +87,7 @@ export default function Navbar() {
               <MobileNavLink to="/contact" onClick={() => setIsOpen(false)}>Contact</MobileNavLink>
               <Link 
                 to="/cart" 
-                className="block hover:text-accent px-3 py-2 relative inline-flex items-center"
+                className="w-full hover:text-accent px-3 py-2 relative flex items-center"
                 onClick={() => setIsOpen(false)}
               >
                 Cart

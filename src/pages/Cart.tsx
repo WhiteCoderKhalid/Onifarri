@@ -51,7 +51,7 @@ export default function Cart() {
                 exit={{ opacity: 0 }}
                 className="bg-white rounded-lg shadow-md p-6"
               >
-                <div className="flex gap-6">
+                <div className="flex flex-col md:flex-row gap-6">
                   <img
                     src={item.image}
                     alt={item.name}
@@ -84,7 +84,7 @@ export default function Cart() {
                       </button>
                     </div>
                   </div>
-                  <div className="text-xl font-bold text-primary">
+                  <div className="text-xl font-bold text-primary md:text-right md:min-w-[100px] mt-4 md:mt-0">
                     ₦{(item.price * item.quantity).toLocaleString()}
                   </div>
                 </div>
