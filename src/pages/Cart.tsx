@@ -8,14 +8,21 @@ export default function Cart() {
   const { cart, removeFromCart, updateQuantity, total } = useCart();
   const navigate = useNavigate();
 
+
   const handleWhatsAppCheckout = () => {
     const message = `Hello! I would like to order:\n\n${cart
-      .map(item => `${item.quantity}x ${item.name} - ₦${(item.price * item.quantity).toLocaleString()}`)
+      .map(
+        item =>
+          `${item.quantity}x ${item.name} (${item.size}) - ₦${(
+            item.price * item.quantity
+          ).toLocaleString()}`
+      )
       .join('\n')}\n\nTotal: ₦${total.toLocaleString()}`;
-    
-    const whatsappUrl = `https://wa.me/2341234567890?text=${encodeURIComponent(message)}`;
+  
+    const whatsappUrl = `https://wa.me/2348035128006?text=${encodeURIComponent(message)}`;
     window.open(whatsappUrl, '_blank');
   };
+  
 
   if (cart.length === 0) {
     return (
@@ -59,7 +66,10 @@ export default function Cart() {
                   />
                   <div className="flex-grow">
                     <h3 className="text-xl font-bold mb-2">{item.name}</h3>
-                    <p className="text-gray-600 mb-4">{item.description}</p>
+                    <p className="text-gray-600 mb-4">{item.description}</p>    
+                    {/* <p className="text-sm text-neutral font-bold">Size: {item.size}</p> */}
+                    <p className="text-sm text-neutral font-extrabold">Size: {item.size}</p>
+
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-4">
                         <button

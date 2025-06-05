@@ -119,6 +119,9 @@ export default function Shop() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2 text-primary">{product.name}</h3>
+                {/* <p className="text-sm text-neutral">Size: {product.size}</p> */}
+                <p className="text-base text-gray-900 font-semibold">Size: {product.size}</p>
+
                 <div className="flex items-center justify-between mb-4">
                   <p className="text-2xl font-bold text-accent">
                     ₦{product.price.toLocaleString()}
@@ -179,6 +182,8 @@ export default function Shop() {
                   <div className="p-8">
                     <h2 className="text-3xl font-bold mb-4 text-primary">{selectedProduct.name}</h2>
                     <p className="text-neutral mb-6 font-medium">{selectedProduct.description}</p>
+                    {/* <p className="text-sm text-neutral mb-6">Size: {selectedProduct.size}</p> */}
+                    <p className="text-sm text-neutral mb-6 font-bold">Size: {selectedProduct.size}</p>
                     <div className="flex items-center gap-4 mb-6">
                       <div className="text-3xl font-bold text-accent">
                         ₦{selectedProduct.price.toLocaleString()}

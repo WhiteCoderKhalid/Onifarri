@@ -5,6 +5,7 @@ export interface Product {
   category: 'caps' | 'asooke';
   description: string;
   image: string;
+  size: number;
 }
 
 export interface CartItem extends Product {

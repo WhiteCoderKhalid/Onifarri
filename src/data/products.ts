@@ -10,7 +10,8 @@ export const products: Product[] = [
     price: 15000,
     category: 'caps',
     description: 'Handcrafted velvet cap with intricate embroidery, perfect for special occasions.',
-    image: image1
+    image: image1,
+    size: 22
   },
   {
     id: '2',
@@ -18,7 +19,9 @@ export const products: Product[] = [
     price: 45000,
     category: 'asooke',
     description: 'Hand-woven premium Aso Oke fabric in traditional patterns.',
-    image: 'https://images.unsplash.com/photo-1589363360147-4f2d51541551?auto=format&fit=crop&q=80&w=800'
+    image: 'https://images.unsplash.com/photo-1589363360147-4f2d51541551?auto=format&fit=crop&q=80&w=800',
+    size: 22
+
   },
   {
     id: '4',
@@ -26,7 +29,8 @@ export const products: Product[] = [
     price: 12000,
     category: 'caps',
     description: 'Traditional cap with detailed embroidery work, suitable for daily wear.',
-    image: Profile
+    image: Profile,
+    size: 22.5
   },
   {
     id: '5',
@@ -34,7 +38,8 @@ export const products: Product[] = [
     price: 65000,
     category: 'asooke',
     description: 'Complete set of premium Aso Oke fabric for special celebrations.',
-    image: Profile
+    image: Profile,
+    size: 24
   },
   {
     id: '7',
@@ -42,7 +47,8 @@ export const products: Product[] = [
     price: 18000,
     category: 'caps',
     description: 'Luxurious velvet cap with gold thread embroidery.',
-    image: image2
+    image: image2,
+    size: 23
   },
   {
     id: '8',
@@ -50,6 +56,7 @@ export const products: Product[] = [
     price: 55000,
     category: 'asooke',
     description: 'Traditional Aso Oke with heritage patterns and premium quality.',
-    image: image1
+    image: image1,
+    size: 22
   }
 ];
